@@ -1,0 +1,14 @@
+DROP TABLE public.tb_edificios;
+DROP TABLE public.tb_iluminacion_art;
+DROP TABLE public.tb_codigos_de_campus;
+DROP TABLE public.tb_estructura_uso_crue;
+DROP TABLE public.tb_espacios;
+DROP TABLE public.tb_tipo_de_uso;
+DROP TABLE public.tb_orientacion;
+DROP TABLE public.tb_persianas;
+DROP TABLE public.tb_ciudades;
+DROP TABLE public.tb_pizarra;
+DROP TABLE public.tb_tipo_bies;
+DROP TABLE public.tb_fotos;
+DROP TABLE public.tb_tipo_climatizacion;
+DROP TABLE public.tb_tipo_calefaccion;

@@ -151,3 +151,12 @@ CREATE TABLE IF NOT EXISTS tb_tipo_calefaccion (
   tipo_calefaccion text,
 	PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS tb_users (
+	email varchar(40) NOT NULL,
+	pass varchar(10) NOT NULL,
+  	created DATE,
+ 	type varchar(15),
+ 	username varchar(20),
+	PRIMARY KEY (username)
+);

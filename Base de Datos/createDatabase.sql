@@ -160,3 +160,10 @@ CREATE TABLE IF NOT EXISTS tb_users (
  	username varchar(20),
 	PRIMARY KEY (username)
 );
+
+CREATE TABLE IF NOT EXISTS tb_horarios (
+  idEspacio text,
+	dia text,
+	hora integer,
+	actividad text
+);

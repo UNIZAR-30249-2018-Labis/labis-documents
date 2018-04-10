@@ -167,3 +167,9 @@ CREATE TABLE IF NOT EXISTS tb_horarios (
 	hora integer,
 	actividad text
 );
+
+CREATE TABLE IF NOT EXISTS tb_horarios_mantenimiento (
+  username varchar(20),
+	hora integer,
+	PRIMARY KEY (username)
+);

@@ -1,0 +1,25 @@
+Falta diagrama de modulos donde se reflejen las capas de la aplicación.
+
+CyC no refleja la división por capas.
+
+Diagrama de distribución, conecta nodos.
+
+Quizas un Horario grande que tenga elementos mas pequeños como está ahora.
+
+Las entidades extienden a la interfaz Entity.
+
+Quitar OV y entity de los nombres del dominio.
+
+Quizas sacar las comprobaciones fuera de los repositorios y dejar en los repositorios las funciones simples.
+
+Utilizar excepciones para tratar resultados de las funciones de los repositorios.
+
+Horarios es un agregado con espacios y deberia tratarse en el repositorio de espacios.
+
+REFACTORIZAR NOMBRES DE TODO! Funciones y entidades
+
+Investigar peticiones HTTP con Spring para no utilizar headers, meterlos en URL (en el login y el signup esta bien)
+
+Incluir codigo de lado cliente en los tests
+
+Los controladores REST del servidor son servicios de la capa de aplicacion

@@ -173,3 +173,21 @@ CREATE TABLE IF NOT EXISTS tb_horarios_mantenimiento (
 	hora integer,
 	PRIMARY KEY (username)
 );
+
+CREATE TABLE IF NOT EXISTS tb_localizacion(
+  id serial primary key,
+  x float(10),
+  y float(10),
+  planta integer,
+  id_espacio text
+);
+
+
+CREATE TABLE IF NOT EXISTS tb_incidencias (
+  idIncidencia serial primary key,
+  titulo text,
+  estado text,
+  descripcion text,
+  idLocalizacion integer,
+  FOREIGN KEY(idLocalizacion) REFERENCES tb_localizacion(id)
+);

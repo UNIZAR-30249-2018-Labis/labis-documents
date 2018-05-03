@@ -174,6 +174,12 @@ CREATE TABLE IF NOT EXISTS tb_horarios_mantenimiento (
 	PRIMARY KEY (username)
 );
 
+CREATE TABLE IF NOT EXISTS tb_trabajador(
+  id serial primary key
+  --Faltan el resto de atributos del trabajador
+);
+
+
 CREATE TABLE IF NOT EXISTS tb_localizacion(
   id serial primary key,
   x float(10),
@@ -190,4 +196,11 @@ CREATE TABLE IF NOT EXISTS tb_incidencias (
   descripcion text,
   idLocalizacion integer,
   FOREIGN KEY(idLocalizacion) REFERENCES tb_localizacion(id)
+);
+
+CREATE TABLE IF NOT EXISTS tb_trabajadorEIncidencias(
+  idTrabajador integer not null,
+  idIncidencia integer not null,
+  FOREIGN KEY(idTrabajador) REFERENCES tb_trabajador(id),
+  FOREIGN KEY(idIncidencia) REFERENCES tb_incidencias(idIncidencia)
 );

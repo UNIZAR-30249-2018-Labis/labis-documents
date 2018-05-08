@@ -204,3 +204,10 @@ CREATE TABLE IF NOT EXISTS tb_trabajadorEIncidencias(
   FOREIGN KEY(idTrabajador) REFERENCES tb_trabajador(id),
   FOREIGN KEY(idIncidencia) REFERENCES tb_incidencias(idIncidencia)
 );
+
+CREATE TABLE IF NOT EXISTS tb_incidenciasCreadasXUsuario(
+  username varchar(20) not null,
+  idIncidencia integer not null,
+  FOREIGN KEY(username) REFERENCES tb_users(username),
+  FOREIGN KEY(idIncidencia) REFERENCES tb_incidencias(idIncidencia)
+);
